@@ -1,5 +1,5 @@
-# vue-admin-template
+# sjs
 
 > 此项目是青岛岁九诗影视文化传媒有限公司官网项目
 
-Copyright (c) 2019-present xiaofan007
+© 2016-2019 青岛岁九诗影视文化传媒有限公司  鲁ICP备18050030号-1
