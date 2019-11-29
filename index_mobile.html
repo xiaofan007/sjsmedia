@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title class="my-name">岁九诗-青岛岁九诗影视文化传媒有限公司</title>
+    <script src="js/device.js"></script>
+    <script>
+        if (device.desktop()) {
+            window.location.href = pc_server_url;
+        }
+    </script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.staticfile.org/mui/3.7.1/css/mui.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/mui/3.7.1/js/mui.min.js"></script>
+    <link href="css/media_app.css" rel="stylesheet"/>
+</head>
+
+<body>
+<!-- 主界面菜单同时移动 -->
+<!-- 侧滑导航根容器 -->
+<div class="mui-off-canvas-wrap mui-draggable">
+    <!-- 菜单容器 -->
+    <aside class="mui-off-canvas-right" id="offCanvasSide">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!-- 菜单具体展示内容 -->
+                <div class="my-name title"></div>
+                <div class="content my-intro"></div>
+                <div class="title" style="margin-bottom: 25px;">导航菜单</div>
+                <ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right">
+                            首页
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right goOtherHtml" href="html_mobile/aboutAs.html">
+                            公司介绍
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right goOtherHtml" href="html_mobile/serviceList.html">
+                            服务项目
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right goOtherHtml" href="html_mobile/contactUs.html">
+                            联系我们
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    <!-- 主页面容器 -->
+    <div class="mui-inner-wrap">
+
+        <!-- 主页面标题 -->
+        <header class="mui-bar mui-bar-nav">
+            <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-right" href="#offCanvasSide"></a>
+            <h1 class="mui-title">岁九诗</h1>
+        </header>
+
+        <!-- 主页面内容容器 -->
+        <div class="mui-content mui-scroll-wrapper" style="background-color: #FFFFFF;">
+            <div class="mui-scroll" style="padding-bottom: 65px;">
+                <!-- 主界面具体展示内容 -->
+                <div id="slider" class="mui-slider">
+                    <div class="mui-slider-group mui-slider-loop">
+                        <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+                        <div class="mui-slider-item mui-slider-item-duplicate">
+                            <a href="#">
+                                <img src="img/product/影院灯箱2.jpg">
+                            </a>
+                        </div>
+                        <!-- 第一张 -->
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="img/product/yqgg2.jpg">
+                            </a>
+                        </div>
+                        <!-- 第二张 -->
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="img/product/影院灯箱1.jpg">
+                            </a>
+                        </div>
+                        <!-- 第三张 -->
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="img/product/影院灯箱2.jpg">
+                            </a>
+                        </div>
+                        <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+                        <div class="mui-slider-item mui-slider-item-duplicate">
+                            <a href="#">
+                                <img src="img/product/yqgg2.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mui-slider-indicator">
+                        <div class="mui-indicator mui-active"></div>
+                        <div class="mui-indicator"></div>
+                        <div class="mui-indicator"></div>
+                    </div>
+                </div>
+
+                <h3 class="my-title">服务项目</h3>
+                <div class="mui-content">
+                    <ul id="service-ul" class="mui-table-view mui-grid-view">
+                    </ul>
+                </div>
+                <div class="mui-card" style="margin: 0;">
+                    <div class="mui-card-footer">
+                        <a class="mui-card-link"></a>
+                        <a class="mui-card-link" href="html_mobile/serviceList.html">查看详情</a>
+                    </div>
+                </div>
+
+                <h3 class="my-title">关于我们</h3>
+                <div class="mui-card">
+                    <div class="mui-card-header mui-card-media"
+                         style="height:40vw;background-image:url(img/about.png)"></div>
+                    <div class="mui-card-content">
+                        <div class="mui-card-content-inner">
+                            <p>成立于 2016年8月</p>
+                            <p style="color: #333;">
+                                自成立以来，我们始终奉行<b>创意至先、执行至优、统筹至上、价格至诚、以人为本</b>的公司文化理念，
+                                以最诚挚的价格、最专业的服务，为客户带来最高效的回报。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mui-card-footer">
+                        <a class="mui-card-link"></a>
+                        <a class="mui-card-link" href="html_mobile/aboutAs.html">查看详情</a>
+                    </div>
+                </div>
+
+                <h3 class="my-title">联系我们</h3>
+                <div class="mui-card">
+                    <div class="mui-card-header mui-card-media"
+                         style="height:40vw;background-image:url(img/map.jpg)">
+                    </div>
+                    <div class="mui-card-content">
+                        <div class="mui-card-content-inner">
+                            <p>您可以通过以下方式联系我们：</p>
+                            <p style="color: #333;">
+                                联系电话：15315503399
+                            </p>
+                            <p style="color: #333;">
+                                联系邮箱：317201218@qq.com
+                            </p>
+                            <p style="color: #333;">
+                                公司网址：www.sjsmedia.cn
+                            </p>
+                            <p style="color: #333;">
+                                公司地址：
+                                <a href="http://map.baidu.com/?l=&s=s%26wd%3D%E5%B1%B1%E4%B8%9C%E7%9C%81%E9%9D%92%E5%B2%9B%E5%B8%82%E5%B8%82%E5%8C%97%E5%8C%BA%E5%9B%9B%E6%B5%81%E5%8D%97%E8%B7%AF64%E5%8F%B73L"
+                                   target="_blank">山东省青岛市市北区四流南路64号3L</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mui-card-footer">
+                        <a class="mui-card-link"></a>
+                        <a class="mui-card-link" href="html_mobile/contactUs.html">查看详情</a>
+                    </div>
+                </div>
+
+                <div class="my-button">
+                    <div class="mui-text-center">
+                        <p id="footer-1" style="margin-bottom: 6px;">© 2016-2018 青岛岁九诗影视文化传媒有限公司</p>
+                        <p id="footer-2" style="margin-bottom: 6px;">鲁ICP备18050030号-1</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="mui-off-canvas-backdrop"></div>
+    </div>
+</div>
+
+<script type="text/javascript" charset="UTF-8" src="js/comment.js"></script>
+<script type="text/javascript" charset="utf-8">
+    mui.init();
+    (function ($) {
+        $(".mui-scroll-wrapper").scroll();
+    })(mui);
+    //获得slider插件对象
+    var gallery = mui('#slider');
+    gallery.slider({
+        interval: 3000 //自动轮播周期，若为0则不自动播放，默认为0；
+    });
+    $(function () {
+        for (var item in serviceList) {
+            if (item > 3) {
+                break;
+            }
+            var html = '<li class="mui-table-view-cell mui-media mui-col-xs-6">';
+            html += '<a href="html_mobile/service.html?id=' + item + '">';
+            html += '<img class="mui-media-object" src="' + serviceList[item].imgURL + '">';
+            html += '<div class="mui-media-body">' + serviceList[item].title + '</div>';
+            html += '</a></li>';
+
+            $("#service-ul").append(html);
+        }
+    })
+</script>
+</body>
+</html>

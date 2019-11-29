@@ -1,0 +1,43 @@
+/*body{
+	background-color: #FFFFFF;
+}
+.mui-content .mui-scroll-wrapper{
+	background-color: #FFFFFF !important;
+}*/
+* {
+    touch-action: none;
+}
+
+.mui-scroll {
+    min-height: calc(100% - 44px);
+}
+
+.my-title {
+    text-align: center;
+    margin: 20px 0 0 0;
+    color: #f1c40f;
+}
+
+.my-button {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(68, 68, 68);
+}
+
+.mui-off-canvas-right {
+    color: #fff;
+}
+
+.title {
+    margin: 35px 15px 10px;
+}
+
+.title + .content {
+    margin: 10px 15px 35px;
+    color: #bbb;
+    text-indent: 1em;
+    font-size: 14px;
+    line-height: 24px;
+}

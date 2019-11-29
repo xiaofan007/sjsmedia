@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="CN">
+<head>
+  <meta charset="UTF-8">
+  <title>SSO</title>
+</head>
+<body>
+</body>
+<script type="text/javascript">
+ window.addEventListener('message', function(event) {
+    var message = JSON.parse(event.data, event);
+    var origin = '*';
+    var reMessage = {
+        'code': null,
+        'success': null,
+        'message': null,
+        'token': null
+    };
+    switch (message.type) {
+        case 'get':
+            var ssoToken = window.localStorage.getItem("SSOToken");
+            if (ssoToken) {
+                reMessage.token = ssoToken;
+                reMessage.success = true;
+                reMessage.message = '获取token成功';
+                reMessage.code = 1;
+                event.source.postMessage(JSON.stringify(reMessage), origin)
+            } else {
+                reMessage.token = '';
+                reMessage.success = false;
+                reMessage.message = '未登录，无token';
+                reMessage.code = 2;
+                event.source.postMessage(JSON.stringify(reMessage), origin)
+            };
+            break;
+        case 'set':
+            if (message.token) {
+                window.localStorage.setItem("SSOToken", message.token);
+                reMessage.token = '';
+                reMessage.success = true;
+                reMessage.message = '保存token成功';
+                reMessage.code = 3;
+                event.source.postMessage(JSON.stringify(reMessage), origin)
+            } else {
+                reMessage.token = '';
+                reMessage.success = true;
+                reMessage.message = '保存token失败，token信息有误';
+                reMessage.code = 4;
+                event.source.postMessage(JSON.stringify(reMessage), origin)
+            };
+            break;
+        case 'del':
+            try {
+                window.localStorage.removeItem("SSOToken");
+                reMessage.token = '';
+                reMessage.success = true;
+                reMessage.message = '删除token成功';
+                reMessage.code = 5;
+                event.source.postMessage(JSON.stringify(reMessage), origin)
+            } catch (e) {
+                reMessage.token = '';
+                reMessage.success = true;
+                reMessage.message = '删除token失败';
+                reMessage.code = 6;
+                event.source.postMessage(JSON.stringify(reMessage), origin)
+            };
+            break
+    }
+}, false);
+ </script>
+</html>

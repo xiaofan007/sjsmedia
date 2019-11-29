@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title class="my-name">岁九诗-青岛岁九诗影视文化传媒有限公司</title>
+    <script src="../js/device.js"></script>
+    <script>
+        if (device.desktop()) {
+            window.location.href = pc_server_url;
+        }
+    </script>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.staticfile.org/mui/3.7.1/css/mui.min.css" rel="stylesheet">
+    <link href="../css/media_app.css" rel="stylesheet"/>
+    <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/mui/3.7.1/js/mui.min.js"></script>
+
+</head>
+
+<body>
+<!-- 主界面菜单同时移动 -->
+<!-- 侧滑导航根容器 -->
+<div class="mui-off-canvas-wrap mui-draggable">
+    <!-- 菜单容器 -->
+    <aside class="mui-off-canvas-right" id="offCanvasSide">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!-- 菜单具体展示内容 -->
+                <div class="my-name title"></div>
+                <div class="content my-intro"></div>
+                <div class="title" style="margin-bottom: 25px;">导航菜单</div>
+                <ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right" href="../index_mobile.html">
+                            首页
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right goOtherHtml" href="aboutAs.html">
+                            公司介绍
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right goOtherHtml" href="serviceList.html">
+                            服务项目
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right goOtherHtml" href="contactUs.html">
+                            联系我们
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!-- 主页面容器 -->
+    <div class="mui-inner-wrap">
+        <!-- 主页面标题 -->
+        <header class="mui-bar mui-bar-nav">
+            <a href="javascript:history.go(-1)" class="mui-icon mui-icon-back mui-pull-left"></a>
+            <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-right" href="#offCanvasSide"></a>
+            <h1 class="mui-title">岁九诗</h1>
+        </header>
+        <!-- 主页面内容容器 -->
+        <div class="mui-content mui-scroll-wrapper" style="background-color: #FFFFFF;">
+            <div class="mui-scroll">
+                <!-- 主界面具体展示内容 -->
+                <h3 class="my-title">公司简介</h3>
+                <div class="mui-card" style="margin-bottom: 50px">
+                    <div class="mui-card-header mui-card-media"
+                         style="height:40vw;background-image:url(../img/about.png)"></div>
+                    <div class="mui-card-content">
+                        <div class="mui-card-content-inner">
+                            <p>成立于 2016年8月</p>
+                            <p style="color: #333;">
+                                自成立以来，我们始终奉行<b>创意至先、执行至优、统筹至上、价格至诚、以人为本</b>的公司文化理念，
+                                以最诚挚的价格、最专业的服务，为客户带来最高效的回报。
+                            </p>
+                            <p style="color: #333;">
+                                目前公司主营两大板块业务。
+                            </p>
+                            <p style="color: #333;">
+                                <b>一、影院媒体代理及发布：</b><br>目前业务覆盖山东省内15座城市、70余家核心影院、5000块银幕，打造最具价值的电影广告联播网络。
+                            </p>
+                            <p style="color: #333;">
+                                <b>二、活动策划执行：</b><br>公司拥有一流设备，并与全国各个主要场馆、酒店、商场等长期保持良好互动。
+                                自成立以来承接多场活动策划及运营管理，让每一个客户都获得了超高品质的服务，受到多个客户的友好评价。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-button">
+                    <div class="mui-text-center">
+                        <p id="footer-1" style="margin-bottom: 6px;">© 2016-2018 青岛岁九诗影视文化传媒有限公司</p>
+                        <p id="footer-2" style="margin-bottom: 6px;">鲁ICP备18050030号-1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mui-off-canvas-backdrop"></div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" charset="UTF-8" src="../js/comment.js"></script>
+<script>
+    (function ($) {
+        $(".mui-scroll-wrapper").scroll();
+    })(mui);
+</script>
+</html>
