@@ -60,7 +60,7 @@ $(function () {
         '        </div>' +
         '    </div>' +
         '    <div class="footer_copyright">' +
-        '        <span>© 2016-2019 青岛岁九诗影视文化传媒有限公司&nbsp;&nbsp;鲁ICP备18050030号-1  </span>' +
+        '        <span>© 2016-2022 青岛岁九诗影视文化传媒有限公司&nbsp;&nbsp;鲁ICP备18050030号-1  </span>' +
         '    </div>';
 
     // $("#header").html(headerHtml);
